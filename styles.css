@@ -1,165 +1,176 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 
 body {
-  font-family: "Roboto", sans-serif;
-  display: flex;
-  flex-direction: column;
+  background-color: #ffffff;
   margin: 0;
-}
-
-.header {
-  padding: 0 150px;
-  background-color: #1f2937;
-  color: white;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.header-logo {
-  font-size: 24px;
-  font-weight: bold;
-  color: #f9faf8;
-}
-
-ul {
-  display: flex;
-  gap: 16px;
-  list-style: none;
-}
-a {
-  font-size: 18px;
-  text-decoration: none;
-  color: #e5e7eb;
+  padding: 0;
+  text-align: center;
+  font-family: "Roboto", serif;
 }
 
 .container {
   display: flex;
   flex-direction: column;
-  flex: 1;
 }
 
-.awesome {
-  padding: 100px 150px;
-  background-color: #1f2937;
+/* Navbar part */
+
+.navbar {
   display: flex;
-  gap: 50px;
+  background-color: #1f2937;
+  padding: 20px 100px 20px 100px;
+  align-items: center;
 }
 
-.awesome h1 {
-  margin: 0;
-}
-.awesome p {
-  margin-top: 0;
-}
-
-.awesome img {
-  width: 750px;
-  height: 200px;
+.header-logo {
+  margin-right: auto;
+  color: #f9faf8;
+  font-size: 24px;
+  font-weight: 700;
 }
 
-.main-title {
-  font-size: 48px;
-  font-weight: 900;
-  color: #fefaf8;
+.header-link {
+  display: flex;
+  margin-left: auto;
 }
 
-.sub-text {
+.header-link a {
+  text-decoration: none;
+  color: #e5e7eb;
   font-size: 18px;
-  color: #e5e7eb;
+  padding: 10px;
 }
 
-button {
-  background-color: #3882f6;
-  padding: 5px 25px;
-  border: none;
-  border-radius: 7px;
-  color: #e5e7eb;
-  font-weight: 600;
+/* Hero part */
+
+.hero {
+  display: flex;
+  color: #f9faf8;
+  background-color: #1f2937;
+  align-items: center;
+  justify-content: center;
+  padding: 90px;
 }
 
-img {
-  background-color: grey;
-}
-
-.random {
-  padding: 25px 150px 50px 150px;
-  text-align: center;
+.hero-cta {
   display: flex;
   flex-direction: column;
-  gap: 50px;
+  flex-basis: 400px;
+  text-align: left;
+  margin-right: 50px;
 }
 
-.random-infos {
+.hero-cta p {
+  opacity: 0.7;
+}
+
+h1 {
+  font-size: 48px;
+  font-weight: 900;
+  color: #f9faf8;
   margin: 0;
 }
-.all-cards {
+
+.hero button {
+  display: block;
+  text-align: center;
+  width: 110px;
+  border: none;
+  background-color: #3882f6;
+  color: #fff;
+  padding: 10px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.hero-img img {
+  width: 500px;
+  height: 350px;
+}
+
+/* Content part */
+
+.content-info {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 50px;
 }
 
-.card {
-  width: 150px;
-  height: auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
+.content-info img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border: 4px solid #3882f6;
+  border-radius: 15px;
+  margin: 5px 20px 0 20px;
 }
-.card img {
-  border: 5px solid #3882f6;
-  border-radius: 10%;
-}
+
+/* Quote Part */
 
 .quote {
-  padding: 50px 250px;
+  display: flex;
+  flex-direction: column;
   background-color: #e5e7eb;
-  text-align: left;
+  padding: 0 200px;
+}
+
+.quote p {
   font-size: 36px;
-  font-weight: 100;
-  font-style: italic;
   color: #1f2937;
+  font-style: italic;
+  font-weight: lighter;
 }
 
-.sig {
+.quote b {
+  padding-bottom: 20px;
+  padding-right: 10px;
   text-align: right;
-  color: black;
-  font-size: 24px;
-  font-weight: 800;
 }
 
-.caller {
-  margin: 75px 150px;
-  padding: 25px 100px;
+/* Sign-up part */
+
+.sign-up {
+  display: flex;
+  align-items: center;
   background-color: #3882f6;
-  border-radius: 10px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  margin: 50px 200px;
+  padding: 10px 80px;
+  border-radius: 5px;
+  border-color: none;
 }
 
-.content {
-  color: #e5e7eb;
-}
-.content h2 {
-  margin-bottom: 0;
+.sign-item {
+  flex: 1;
 }
 
-.content p {
-  margin-top: 0;
+.sign-text {
+  text-align: left;
 }
 
-.caller button {
-  border: 2px solid white;
+.sign-text p {
+  color: #fff;
+  opacity: 0.7;
+  margin: 5px 30px 30px 50px;
 }
+
+h3 {
+  color: #fff;
+  padding: 0;
+  margin: 30px 0 0 50px;
+}
+
+.sign-button button {
+  color: #fff;
+  border-style: solid;
+  border-color: #fff;
+  border-radius: 8px;
+  background-color: #3882f6;
+  padding: 5px 25px;
+  font-size: 15px;
+}
+
 .footer {
-  height: 75px;
   background-color: #1f2937;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 19px;
-  color: #e5e7eb;
+  color: #fff;
 }
